@@ -38,12 +38,13 @@ public final class ModBlocks {
 	// "local de trabalho" é o registro de POI em ModVillagers.
 	public static final Block PANELA_DE_DOCES = register(
 			"panela_de_doces",
-			Block::new,
+			PanelaDeDocesBlock::new,
 			BlockBehaviour.Properties.of()
-					.mapColor(MapColor.METAL)
+					.mapColor(MapColor.COLOR_ORANGE)
 					.strength(2.0f)
-					.sound(SoundType.METAL)
-					.lightLevel(state -> 6)); // brilho fraquinho do doce no fogo
+					.sound(SoundType.COPPER)
+					.noOcclusion()             // não é um cubo cheio: não esconder as faces dos vizinhos
+					.lightLevel(state -> 6)); // brilho fraquinho do doce quente
 
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
 		ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, PacocaMod.id(name));
