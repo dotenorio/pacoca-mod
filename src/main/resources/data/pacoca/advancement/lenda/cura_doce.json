@@ -1,0 +1,29 @@
+{
+  "parent": "pacoca:lenda/caderno_da_vovo",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:cured_zombie_villager"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_apple"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.cura_doce.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.cura_doce.description"
+    },
+    "frame": "goal"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 50,
+    "function": "pacoca:lenda/capitulo_3"
+  }
+}

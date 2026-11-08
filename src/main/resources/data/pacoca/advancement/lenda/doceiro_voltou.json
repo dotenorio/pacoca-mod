@@ -1,0 +1,34 @@
+{
+  "parent": "pacoca:lenda/cura_doce",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": "pacoca:pacoca_picante"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:panela_de_doces"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.doceiro_voltou.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.doceiro_voltou.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 20,
+    "function": "pacoca:lenda/capitulo_4"
+  }
+}

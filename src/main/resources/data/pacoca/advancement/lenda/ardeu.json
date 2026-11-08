@@ -1,0 +1,33 @@
+{
+  "parent": "pacoca:lenda/primeira_mordida",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "pacoca:pacoca_picante"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:pacoca_picante"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.ardeu.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.ardeu.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

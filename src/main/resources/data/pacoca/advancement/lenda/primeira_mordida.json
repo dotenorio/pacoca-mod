@@ -1,0 +1,33 @@
+{
+  "parent": "pacoca:lenda/root",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "pacoca:pacoca"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:pacoca"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.primeira_mordida.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.primeira_mordida.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  }
+}

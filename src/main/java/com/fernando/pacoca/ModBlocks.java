@@ -34,6 +34,17 @@ public final class ModBlocks {
 					.strength(0.5f)           // dureza parecida com a da areia
 					.sound(SoundType.SAND));  // som de passos/quebra
 
+	// Bancada de trabalho do Doceiro. Para o jogo ela é um bloco comum; quem a transforma em
+	// "local de trabalho" é o registro de POI em ModVillagers.
+	public static final Block PANELA_DE_DOCES = register(
+			"panela_de_doces",
+			Block::new,
+			BlockBehaviour.Properties.of()
+					.mapColor(MapColor.METAL)
+					.strength(2.0f)
+					.sound(SoundType.METAL)
+					.lightLevel(state -> 6)); // brilho fraquinho do doce no fogo
+
 	private static Block register(String name, Function<BlockBehaviour.Properties, Block> factory, BlockBehaviour.Properties properties) {
 		ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, PacocaMod.id(name));
 		Block block = factory.apply(properties.setId(blockKey));
@@ -51,5 +62,7 @@ public final class ModBlocks {
 	public static void initialize() {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS)
 				.register(output -> output.accept(PACOCA_BLOCK));
+		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS)
+				.register(output -> output.accept(PANELA_DE_DOCES));
 	}
 }

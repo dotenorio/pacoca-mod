@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "O Doceiro Acordou",
+    "color": "gold",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Seu Zé pisca, cospe um pedaço de carne podre e abre um sorriso.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\"Quanto tempo eu dormi? A minha panela ainda está aí? Me dá um minutinho que eu volto pro batente!\"",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Deixe a cela aberta: ele vai voltar para a Panela de Doces. Só um Doceiro de verdade sabe usá-la.",
+      "width": 300
+    }
+  ],
+  "action": {
+    "label": "Bem-vindo de volta, Seu Zé"
+  }
+}

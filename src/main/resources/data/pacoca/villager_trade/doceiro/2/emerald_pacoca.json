@@ -1,0 +1,1 @@
+{ "wants": { "id": "minecraft:emerald" }, "gives": { "id": "pacoca:pacoca", "count": 6 }, "max_uses": 16, "xp": 5, "reputation_discount": 0.05 }

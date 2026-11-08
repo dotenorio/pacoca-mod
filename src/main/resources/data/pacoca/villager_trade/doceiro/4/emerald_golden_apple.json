@@ -1,0 +1,1 @@
+{ "wants": { "id": "minecraft:emerald", "count": 10 }, "gives": { "id": "minecraft:golden_apple" }, "max_uses": 4, "xp": 15, "reputation_discount": 0.2 }

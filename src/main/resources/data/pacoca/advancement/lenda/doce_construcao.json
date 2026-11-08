@@ -1,0 +1,35 @@
+{
+  "parent": "pacoca:lenda/primeira_mordida",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "pacoca:pacoca_block"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:pacoca_block"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.doce_construcao.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.doce_construcao.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  }
+}

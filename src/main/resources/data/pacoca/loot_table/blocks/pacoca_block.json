@@ -2,13 +2,16 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
       "entries": [
-        { "type": "minecraft:item", "name": "pacoca:pacoca_block" }
+        {
+          "type": "minecraft:item",
+          "name": "pacoca:pacoca_block"
+        }
       ],
-      "conditions": [
-        { "condition": "minecraft:survives_explosion" }
-      ]
+      "rolls": 1
     }
   ]
 }

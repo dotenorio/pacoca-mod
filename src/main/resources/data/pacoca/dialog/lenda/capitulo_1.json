@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "A Lenda da Paçoca",
+    "color": "gold",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Dizem os mais velhos das planícies que, antigamente, toda vila tinha um Doceiro.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Ele mexia a Panela de Doces dia e noite, e a vila inteira cheirava a amendoim torrado.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Até que os zumbis vieram... e os Doceiros sumiram, um por um.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Dessa época só sobrou a paçoca que você tem nas mãos. Prove-a. E, se passar por uma vila das planícies, procure uma casinha de telhado rosa.",
+      "width": 300
+    }
+  ],
+  "action": {
+    "label": "Continuar"
+  }
+}

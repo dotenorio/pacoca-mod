@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "pacoca:block/panela_de_doces_top",
+    "side": "pacoca:block/panela_de_doces_side",
+    "bottom": "pacoca:block/panela_de_doces_bottom"
+  }
+}

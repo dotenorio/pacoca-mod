@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "I I",
+    "I#I",
+    "ICI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "#": "pacoca:pacoca_block",
+    "C": "minecraft:campfire"
+  },
+  "result": {
+    "id": "pacoca:panela_de_doces",
+    "count": 1
+  }
+}

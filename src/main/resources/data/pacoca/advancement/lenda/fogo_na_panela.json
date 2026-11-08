@@ -1,0 +1,35 @@
+{
+  "parent": "pacoca:lenda/doceiro_voltou",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "pacoca:panela_de_doces"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:panela_de_doces"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.fogo_na_panela.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.fogo_na_panela.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

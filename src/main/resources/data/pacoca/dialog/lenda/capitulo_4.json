@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Negócio Doce",
+    "color": "gold",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\"Paçoca Picante saindo! Receita do meu avô, com pó de blaze de verdade.\"",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\"Negocie bastante comigo. Quando eu virar Mestre Doceiro, te conto o segredo da família...\"",
+      "width": 300
+    }
+  ],
+  "action": {
+    "label": "Fechado!"
+  }
+}

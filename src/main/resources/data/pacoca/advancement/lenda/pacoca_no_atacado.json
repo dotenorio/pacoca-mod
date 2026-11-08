@@ -1,0 +1,33 @@
+{
+  "parent": "pacoca:lenda/primeira_mordida",
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": "pacoca:pacoca"
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.pacoca_no_atacado.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.pacoca_no_atacado.description"
+    },
+    "frame": "task"
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  }
+}

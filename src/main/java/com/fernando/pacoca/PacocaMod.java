@@ -20,6 +20,7 @@ public class PacocaMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.initialize();
 		ModBlocks.initialize();
+		ModVillagers.initialize();
 		LOGGER.info("Paçoca carregada! Bom apetite.");
 	}
 

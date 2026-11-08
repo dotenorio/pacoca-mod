@@ -4,6 +4,7 @@ import java.util.function.Function;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -12,6 +13,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
@@ -53,6 +55,33 @@ public final class ModItems {
 			PacocaPicanteItem::new,
 			new Item.Properties().food(PACOCA_FOOD, PACOCA_PICANTE_CONSUMABLE));
 
+	// Paçoca Dourada: só o Doceiro mestre (nível 5) vende. Regeneração II, Absorção e Velocidade.
+	private static final FoodProperties PACOCA_DOURADA_FOOD = new FoodProperties.Builder()
+			.nutrition(8)
+			.saturationModifier(1.2f)
+			.alwaysEdible()
+			.build();
+
+	private static final Consumable PACOCA_DOURADA_CONSUMABLE = Consumables.defaultFood()
+			.onConsume(new ApplyStatusEffectsConsumeEffect(java.util.List.of(
+					new MobEffectInstance(MobEffects.REGENERATION, 200, 1),
+					new MobEffectInstance(MobEffects.ABSORPTION, 2400, 1),
+					new MobEffectInstance(MobEffects.SPEED, 600, 0))))
+			.build();
+
+	public static final Item PACOCA_DOURADA = register(
+			"pacoca_dourada",
+			Item::new,
+			new Item.Properties()
+					.food(PACOCA_DOURADA_FOOD, PACOCA_DOURADA_CONSUMABLE)
+					.rarity(Rarity.RARE) // nome em azul
+					.component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)); // brilho de encantado
+
+	public static final ReceitaDaVovoItem RECEITA_DA_VOVO = register(
+			"receita_da_vovo",
+			ReceitaDaVovoItem::new,
+			new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
+
 	/**
 	 * Registra um item no registro global do jogo.
 	 * Function<Item.Properties, T> é o equivalente Java de (props: Item.Properties) => T.
@@ -74,6 +103,7 @@ public final class ModItems {
 				.register(output -> {
 					output.accept(PACOCA);
 					output.accept(PACOCA_PICANTE);
+					output.accept(PACOCA_DOURADA);
 				});
 	}
 }

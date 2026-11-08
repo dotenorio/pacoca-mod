@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "feito": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "pacoca:pacoca"
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "pacoca:pacoca"
+    },
+    "title": {
+      "translate": "advancements.pacoca.lenda.root.title"
+    },
+    "description": {
+      "translate": "advancements.pacoca.lenda.root.description"
+    },
+    "frame": "task",
+    "background": "minecraft:gui/advancements/backgrounds/husbandry",
+    "announce_to_chat": false
+  },
+  "requirements": [
+    [
+      "feito"
+    ]
+  ],
+  "rewards": {
+    "function": "pacoca:lenda/capitulo_1"
+  }
+}

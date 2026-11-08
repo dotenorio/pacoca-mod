@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "O Caderno da Vovó",
+    "color": "gold",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "As páginas estão manchadas de açúcar. Na última, uma letra tremida:",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\"Meu filho Zé foi mordido. Não tive coragem... tranquei ele na cela da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-lo.\"",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "No mesmo baú havia uma Poção Arremessável de Fraqueza e uma Maçã Dourada.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Dica: arremesse a poção no Seu Zé, abra a cela com a alavanca e dê a maçã dourada a ele. Cuidado: ele ainda morde!",
+      "width": 300
+    }
+  ],
+  "action": {
+    "label": "Vou salvá-lo"
+  }
+}

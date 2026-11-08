@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Mestre Paçoqueiro",
+    "color": "gold",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Você sente o poder do amendoim dourado correndo pelas veias.",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Seu Zé enxuga uma lágrima no avental: \"A vovó ia ficar orgulhosa.\"",
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "A Lenda da Paçoca está completa. As vilas das planícies voltaram a cheirar a amendoim torrado.",
+      "width": 300
+    }
+  ],
+  "action": {
+    "label": "Fim... por enquanto"
+  }
+}
