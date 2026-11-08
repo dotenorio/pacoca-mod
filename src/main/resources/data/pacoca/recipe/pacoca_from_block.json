@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "pacoca:pacoca_block"
+  ],
+  "result": {
+    "id": "pacoca:pacoca",
+    "count": 9
+  }
+}

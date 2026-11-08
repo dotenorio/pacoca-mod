@@ -19,6 +19,7 @@ public class PacocaMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
+		ModBlocks.initialize();
 		LOGGER.info("Paçoca carregada! Bom apetite.");
 	}
 
