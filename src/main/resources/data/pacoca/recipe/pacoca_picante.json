@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "pacoca:pacoca",
+    "minecraft:blaze_powder"
+  ],
+  "result": {
+    "id": "pacoca:pacoca_picante",
+    "count": 1
+  }
+}

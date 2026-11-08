@@ -9,6 +9,9 @@ alimenta 2 pernis, pode ser comido mesmo de barriga cheia e dá **Velocidade I p
 E o **Bloco de Paçoca**: 9 paçocas na bancada viram um bloco (e o bloco volta a ser 9 paçocas).
 Quebra rápido com pá e fica na aba "Blocos de Construção".
 
+E a **Paçoca Picante** (paçoca + pó de blaze): ao comer, solta fogo e fumaça, te lança
+para o alto e dá Queda Lenta para você pousar sem dano.
+
 ## Pré-requisitos
 
 - JDK 25 (ex.: Eclipse Temurin 25). Se `java -version` não mostrar 25, aponte o `JAVA_HOME`:
@@ -40,6 +43,7 @@ junto com o Fabric API e abra o perfil **fabric-loader 26.3** no launcher.
 | `src/main/java/com/fernando/pacoca/PacocaMod.java` | Ponto de entrada (`onInitialize`) |
 | `src/main/java/com/fernando/pacoca/ModItems.java` | Registro do item, comida e efeito |
 | `src/main/java/com/fernando/pacoca/ModBlocks.java` | Registro do bloco e do item do bloco |
+| `src/main/java/com/fernando/pacoca/PacocaPicanteItem.java` | Item com comportamento próprio (herda de `Item`) |
 | `src/main/resources/fabric.mod.json` | Manifesto do mod (tipo um `package.json`) |
 | `src/main/resources/assets/pacoca/` | Textura, modelo e traduções (lado do cliente) |
 | `src/main/resources/data/pacoca/recipe/` | Receitas de crafting (lado do servidor) |

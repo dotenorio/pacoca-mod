@@ -1,4 +1,6 @@
 {
   "item.pacoca.pacoca": "Paçoca",
+  "item.pacoca.pacoca_picante": "Paçoca Picante",
+  "item.pacoca.pacoca_picante.tooltip": "Cuidado: arde!",
   "block.pacoca.pacoca_block": "Bloco de Paçoca"
 }

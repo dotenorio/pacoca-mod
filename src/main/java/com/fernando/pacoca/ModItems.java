@@ -41,6 +41,18 @@ public final class ModItems {
 			Item::new,
 			new Item.Properties().food(PACOCA_FOOD, PACOCA_CONSUMABLE));
 
+	// Ao comer: Queda Lenta por 5 s, para não tomar dano de queda depois do pulo.
+	private static final Consumable PACOCA_PICANTE_CONSUMABLE = Consumables.defaultFood()
+			.consumeSeconds(1.0f)
+			.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 0), 1.0f))
+			.build();
+
+	// Aqui a "fábrica" é PacocaPicanteItem::new, então o item criado é da NOSSA classe, não um Item comum.
+	public static final PacocaPicanteItem PACOCA_PICANTE = register(
+			"pacoca_picante",
+			PacocaPicanteItem::new,
+			new Item.Properties().food(PACOCA_FOOD, PACOCA_PICANTE_CONSUMABLE));
+
 	/**
 	 * Registra um item no registro global do jogo.
 	 * Function<Item.Properties, T> é o equivalente Java de (props: Item.Properties) => T.
@@ -59,6 +71,9 @@ public final class ModItems {
 	 */
 	public static void initialize() {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-				.register(output -> output.accept(PACOCA));
+				.register(output -> {
+					output.accept(PACOCA);
+					output.accept(PACOCA_PICANTE);
+				});
 	}
 }

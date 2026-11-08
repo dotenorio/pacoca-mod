@@ -1,4 +1,6 @@
 {
   "item.pacoca.pacoca": "Paçoca (Peanut Candy)",
+  "item.pacoca.pacoca_picante": "Spicy Paçoca",
+  "item.pacoca.pacoca_picante.tooltip": "Careful: it burns!",
   "block.pacoca.pacoca_block": "Block of Paçoca"
 }
