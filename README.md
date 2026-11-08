@@ -12,6 +12,8 @@ Quebra rápido com pá e fica na aba "Blocos de Construção".
 E a **Paçoca Picante** (paçoca + pó de blaze): ao comer, solta fogo e fumaça, te lança
 para o alto e dá Queda Lenta para você pousar sem dano.
 
+E os **fazendeiros** (aldeões de nível 1) podem vender 4 paçocas por 1 esmeralda.
+
 ## Pré-requisitos
 
 - JDK 25 (ex.: Eclipse Temurin 25). Se `java -version` não mostrar 25, aponte o `JAVA_HOME`:
@@ -48,5 +50,6 @@ junto com o Fabric API e abra o perfil **fabric-loader 26.3** no launcher.
 | `src/main/resources/assets/pacoca/` | Textura, modelo e traduções (lado do cliente) |
 | `src/main/resources/data/pacoca/recipe/` | Receitas de crafting (lado do servidor) |
 | `src/main/resources/data/pacoca/loot_table/` | O que o bloco solta ao ser quebrado |
-| `src/main/resources/data/minecraft/tags/` | Tags do jogo que o mod complementa (ex.: "minerável com pá") |
+| `src/main/resources/data/pacoca/villager_trade/` | Trocas de aldeão (o que ele quer e o que dá) |
+| `src/main/resources/data/minecraft/tags/` | Tags do jogo que o mod complementa (ex.: "minerável com pá", trocas do fazendeiro) |
 | `gradle.properties` | Versões do Minecraft, Fabric Loader e Fabric API |
