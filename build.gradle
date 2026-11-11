@@ -20,6 +20,18 @@ loom {
 	}
 }
 
+// Testes de cliente: um "robô" que abre o jogo, monta cenas e tira prints (pasta src/gametest).
+// Rode com: ./gradlew runClientGameTest
+fabricApi {
+	configureTests {
+		createSourceSet = true
+		modId = "pacoca-test"
+		enableGameTests = false
+		enableClientGameTests = true
+		eula = false
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"

@@ -1,5 +1,11 @@
 # Paçoca — meu primeiro mod de Minecraft
 
+| | |
+|---|---|
+| ![A Doceria](docs/prints/doceria.png) | ![Dentro da Doceria, com o Seu Zé na cela](docs/prints/dentro-da-doceria.png) |
+| ![O Doceiro e a Panela de Doces](docs/prints/doceiro.png) | ![Os itens do mod](docs/prints/itens.png) |
+| ![Um capítulo da lenda](docs/prints/dialogo.png) | ![A árvore de conquistas](docs/prints/conquistas.png) |
+
 Mod para **Minecraft Java 26.3** com **Fabric** que adiciona a **Paçoca**: um docinho que
 alimenta 2 pernis, pode ser comido mesmo de barriga cheia e dá **Velocidade I por 10 s**.
 
@@ -44,6 +50,15 @@ na sua frente, e `/locate structure minecraft:village_plains` acha uma vila de p
 ```
 
 Abre um Minecraft já com o mod e o Fabric API carregados (o mundo de teste fica em `run/`).
+
+## Tirar os prints de novo
+
+```powershell
+.gradlew runClientGameTest
+```
+
+Um teste automático (`src/gametest`) abre o jogo, monta as cenas com comandos e salva os prints em
+`build/run/clientGameTest/screenshots`. Se algo quebrar no mod, o teste falha.
 
 ## Gerar o `.jar`
 

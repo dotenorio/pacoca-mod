@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "pacoca-test",
+	"version": "1.0.0",
+	"name": "Paçoca (testes)",
+	"environment": "client",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"com.fernando.pacoca.test.PrintsDoMod"
+		]
+	},
+	"depends": {
+		"pacoca": "*"
+	}
+}
