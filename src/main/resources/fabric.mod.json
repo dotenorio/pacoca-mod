@@ -7,7 +7,7 @@
 	"authors": [
 		"Fernando"
 	],
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/pacoca/icon.png",
 	"environment": "*",
 	"entrypoints": {
