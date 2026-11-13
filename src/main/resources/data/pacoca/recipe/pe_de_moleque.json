@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "pacoca:pacoca",
+    "pacoca:pacoca",
+    "minecraft:honey_bottle"
+  ],
+  "result": {
+    "id": "pacoca:pe_de_moleque",
+    "count": 2
+  }
+}

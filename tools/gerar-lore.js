@@ -7,16 +7,16 @@ const capitulos = [
     'Até que os zumbis vieram... e os Doceiros sumiram, um por um.',
     'Dessa época só sobrou a paçoca que você tem nas mãos. Prove-a. E, se passar por uma vila das planícies, procure uma casinha de telhado rosa.',
   ] },
-  { titulo: 'O Caderno da Vovó', botao: 'Vou salvá-lo', texto: [
+  { titulo: 'O Caderno da Vovó', botao: 'Vou salvá-la', texto: [
     'As páginas estão manchadas de açúcar. Na última, uma letra tremida:',
-    '"Meu filho Zé foi mordido. Não tive coragem... tranquei ele na cela da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-lo."',
+    '"Minha filha Benedita foi mordida. Não tive coragem... tranquei ela atrás das grades da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-la."',
     'No mesmo baú havia uma Poção Arremessável de Fraqueza e uma Maçã Dourada.',
-    'Dica: arremesse a poção no Seu Zé, abra a cela com a alavanca e dê a maçã dourada a ele. Cuidado: ele ainda morde!',
+    'Dica: arremesse a poção na Dona Benedita, abra a cela com a alavanca e dê a maçã dourada a ela. Cuidado: ela ainda morde!',
   ] },
-  { titulo: 'O Doceiro Acordou', botao: 'Bem-vindo de volta, Seu Zé', texto: [
-    'Seu Zé pisca, cospe um pedaço de carne podre e abre um sorriso.',
+  { titulo: 'A Doceira Acordou', botao: 'Bem-vinda de volta, Dona Benedita', texto: [
+    'Dona Benedita pisca, cospe um pedaço de carne podre e abre um sorriso.',
     '"Quanto tempo eu dormi? A minha panela ainda está aí? Me dá um minutinho que eu volto pro batente!"',
-    'Deixe a cela aberta: ele vai voltar para a Panela de Doces. Só um Doceiro de verdade sabe usá-la.',
+    'Deixe a cela aberta: ela vai voltar para a Panela de Doces. Só um Doceiro de verdade sabe usá-la.',
   ] },
   { titulo: 'Negócio Doce', botao: 'Fechado!', texto: [
     '"Paçoca Picante saindo! Receita do meu avô, com pó de blaze de verdade."',
@@ -24,7 +24,7 @@ const capitulos = [
   ] },
   { titulo: 'Mestre Paçoqueiro', botao: 'Fim... por enquanto', texto: [
     'Você sente o poder do amendoim dourado correndo pelas veias.',
-    'Seu Zé enxuga uma lágrima no avental: "A vovó ia ficar orgulhosa."',
+    'Dona Benedita enxuga uma lágrima no avental: "A vovó ia ficar orgulhosa."',
     'A Lenda da Paçoca está completa. As vilas das planícies voltaram a cheirar a amendoim torrado.',
   ] },
 ];

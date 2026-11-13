@@ -24,7 +24,7 @@ import net.minecraft.world.item.trading.TradeSet;
  * 3. TradeSets: para cada nível (1 a 5), qual lista de trocas usar. As trocas ficam em JSON (data/pacoca/trade_set).
  *
  * Detalhe da lore: a panela NÃO entra na tag minecraft:acquirable_job_site. Por isso aldeões
- * desempregados ignoram a panela; só quem já nasceu Doceiro (o Seu Zé, depois de curado) trabalha nela.
+ * desempregados ignoram a panela; só quem já nasceu Doceiro (a Dona Benedita, depois de curada) trabalha nela.
  */
 public final class ModVillagers {
 	private ModVillagers() {}

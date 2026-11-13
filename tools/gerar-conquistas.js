@@ -10,7 +10,7 @@ const tree = [
   ['doce_construcao', 'primeira_mordida', 'pacoca:pacoca_block', 'task', has('pacoca:pacoca_block'), { experience: 5 }],
   ['ardeu', 'primeira_mordida', 'pacoca:pacoca_picante', 'task', eat('pacoca:pacoca_picante'), { experience: 10 }],
   ['paçoca_no_atacado', 'primeira_mordida', 'minecraft:emerald', 'task', trade('pacoca:pacoca'), { experience: 10 }],
-  // Trilha principal: a história do Seu Zé
+  // Trilha principal: a história da Dona Benedita
   ['caderno_da_vovo', 'root', 'pacoca:receita_da_vovo', 'goal', has('pacoca:receita_da_vovo'), { experience: 20, function: 'pacoca:lenda/capitulo_2' }],
   ['cura_doce', 'caderno_da_vovo', 'minecraft:golden_apple', 'goal', { trigger: 'minecraft:cured_zombie_villager' }, { experience: 50, function: 'pacoca:lenda/capitulo_3' }],
   ['doceiro_voltou', 'cura_doce', 'pacoca:panela_de_doces', 'task', trade('pacoca:pacoca_picante'), { experience: 20, function: 'pacoca:lenda/capitulo_4' }],

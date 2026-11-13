@@ -77,6 +77,34 @@ public final class ModItems {
 					.rarity(Rarity.RARE) // nome em azul
 					.component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)); // brilho de encantado
 
+	// Pé de Moleque: duro de morder, deixa você duro de derrubar. Resistência I por 10 s.
+	private static final Consumable PE_DE_MOLEQUE_CONSUMABLE = Consumables.defaultFood()
+			.consumeSeconds(2.0f) // crocante: demora mais para mastigar
+			.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.RESISTANCE, 200, 0), 1.0f))
+			.build();
+
+	public static final Item PE_DE_MOLEQUE = register(
+			"pe_de_moleque",
+			Item::new,
+			new Item.Properties().food(PACOCA_FOOD, PE_DE_MOLEQUE_CONSUMABLE));
+
+	// Brigadeiro: pequeno (alimenta pouco), mas o açúcar dá energia. Pressa I por 30 s (minera mais rápido).
+	private static final FoodProperties BRIGADEIRO_FOOD = new FoodProperties.Builder()
+			.nutrition(2)
+			.saturationModifier(0.2f)
+			.alwaysEdible()
+			.build();
+
+	private static final Consumable BRIGADEIRO_CONSUMABLE = Consumables.defaultFood()
+			.consumeSeconds(0.8f) // uma bocada só
+			.onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HASTE, 600, 0), 1.0f))
+			.build();
+
+	public static final Item BRIGADEIRO = register(
+			"brigadeiro",
+			Item::new,
+			new Item.Properties().food(BRIGADEIRO_FOOD, BRIGADEIRO_CONSUMABLE));
+
 	public static final ReceitaDaVovoItem RECEITA_DA_VOVO = register(
 			"receita_da_vovo",
 			ReceitaDaVovoItem::new,
@@ -104,6 +132,8 @@ public final class ModItems {
 					output.accept(PACOCA);
 					output.accept(PACOCA_PICANTE);
 					output.accept(PACOCA_DOURADA);
+					output.accept(PE_DE_MOLEQUE);
+					output.accept(BRIGADEIRO);
 				});
 	}
 }

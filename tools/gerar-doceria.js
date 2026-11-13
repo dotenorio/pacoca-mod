@@ -41,9 +41,14 @@ set(4, 1, 1, { id: 'pacoca:pacoca_block' }); set(5, 1, 1, { id: 'pacoca:pacoca_b
 set(7, 1, 1, B('barrel', { facing: 'up', open: 'false' }), { id: 'minecraft:barrel', Items: { t: 'List', et: 'Compound', v: [] } });
 set(2, 1, 7, B('potted_poppy'));
 set(4, 3, 4, B('lantern', { hanging: 'true', waterlogged: 'false' }));
-// 6) A cela do Seu Zé (canto x=7,z=7): vidro + porta de ferro com alavanca no chão
-for (let y = 1; y <= 3; y++) { set(6, y, 6, B('glass')); set(7, y, 6, B('glass')); }
-set(6, 3, 7, B('glass'));
+// 6) A cela da Dona Benedita (canto x=7,z=7): grades de ferro + porta de ferro com alavanca no chão.
+// As grades "grudam" nos vizinhos: a propriedade de cada lado diz se aquele braço da barra aparece.
+const bars = (sides) => B('iron_bars', { north: 'false', south: 'false', east: 'false', west: 'false', waterlogged: 'false', ...sides });
+for (let y = 1; y <= 3; y++) {
+  set(6, y, 6, bars({ east: 'true', south: y === 3 ? 'true' : 'false' })); // canto da cela
+  set(7, y, 6, bars({ west: 'true', east: 'true' }));                            // liga na parede x=8
+}
+set(6, 3, 7, bars({ north: 'true', south: 'true' }));                         // em cima da porta
 const iron = (half) => B('iron_door', { facing: 'east', half, hinge: 'right', open: 'false', powered: 'false' });
 set(6, 1, 7, iron('lower')); set(6, 2, 7, iron('upper'));
 set(5, 1, 7, B('lever', { face: 'floor', facing: 'east', powered: 'false' }));
@@ -59,14 +64,14 @@ for (const [k, { st, nbt }] of grid) {
   if (nbt) b.nbt = nbt;
   blocks.push(b);
 }
-// O zumbi: Seu Zé, Doceiro amaldiçoado. Persistente, não quebra portas, já "nasce" Doceiro com 1 de XP
+// A zumbi: Dona Benedita, Doceira amaldiçoada. Persistente, não quebra portas, já "nasce" Doceiro com 1 de XP
 // (com XP > 0 ele nunca perde a profissão depois de curado).
 const zombie = {
   pos: { t: 'List', et: 'Double', v: [7.5, 1, 7.5].map(v => ({ t: 'Double', v })) },
   blockPos: { t: 'List', et: 'Int', v: [7, 1, 7].map(v => ({ t: 'Int', v })) },
   nbt: {
     id: 'minecraft:zombie_villager',
-    CustomName: 'Seu Zé',
+    CustomName: 'Dona Benedita',
     PersistenceRequired: { t: 'Byte', v: 1 },
     CanBreakDoors: { t: 'Byte', v: 0 },
     CanPickUpLoot: { t: 'Byte', v: 0 },

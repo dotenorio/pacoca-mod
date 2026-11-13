@@ -13,7 +13,7 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": "\"Meu filho Zé foi mordido. Não tive coragem... tranquei ele na cela da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-lo.\"",
+      "contents": "\"Minha filha Benedita foi mordida. Não tive coragem... tranquei ela atrás das grades da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-la.\"",
       "width": 300
     },
     {
@@ -23,11 +23,11 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": "Dica: arremesse a poção no Seu Zé, abra a cela com a alavanca e dê a maçã dourada a ele. Cuidado: ele ainda morde!",
+      "contents": "Dica: arremesse a poção na Dona Benedita, abra a cela com a alavanca e dê a maçã dourada a ela. Cuidado: ela ainda morde!",
       "width": 300
     }
   ],
   "action": {
-    "label": "Vou salvá-lo"
+    "label": "Vou salvá-la"
   }
 }
