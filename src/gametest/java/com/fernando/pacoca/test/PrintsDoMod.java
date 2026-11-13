@@ -32,7 +32,7 @@ public class PrintsDoMod implements FabricClientGameTest {
 		// try-with-resources: fecha o mundo no fim, mesmo se der erro (como um "using"/finally).
 		try (TestSingleplayerContext world = context.worldBuilder().create()) {
 			TestServerContext server = world.getServer();
-			server.runCommand("difficulty easy");      // no Pacífico o Seu Zé (zumbi) sumiria
+			server.runCommand("difficulty easy");      // no Pacífico a Dona Benedita (zumbi) sumiria
 			server.runCommand("time set noon");
 			server.runCommand("gamemode spectator @a"); // câmera livre, sem mão aparecendo
 
@@ -60,7 +60,8 @@ public class PrintsDoMod implements FabricClientGameTest {
 			context.runOnClient(mc -> mc.gui.hud.toggle()); // esconde o HUD (como apertar F1)
 
 			cena(context, server, "tp @a -4.5 -57 -3.5", new BlockPos(4, -59, 4), "01-doceria");
-			cena(context, server, "tp @a 2.5 -60 4.5", new BlockPos(7, -60, 4), "02-dentro-da-doceria");
+			// Olha para a cela (canto x=6..7, z=6..7 do molde): pilar com o vão, verga e alavanca
+			cena(context, server, "tp @a 2.5 -60 4.5", new BlockPos(7, -60, 6), "02-dentro-da-doceria");
 			cena(context, server, "tp @a -5.5 -58.4 15.5", new BlockPos(-5, -59, 12), "03-doceiro");
 			cena(context, server, "tp @a -8.5 -58.4 28.5", new BlockPos(-9, -59, 24), "04-itens");
 

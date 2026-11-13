@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| ![A Doceria](docs/prints/doceria.png) | ![Dentro da Doceria, com o Seu Zé na cela](docs/prints/dentro-da-doceria.png) |
+| ![A Doceria](docs/prints/doceria.png) | ![Dentro da Doceria, com a Dona Benedita na cela](docs/prints/dentro-da-doceria.png) |
 | ![O Doceiro e a Panela de Doces](docs/prints/doceiro.png) | ![Os itens do mod](docs/prints/itens.png) |
 | ![Um capítulo da lenda](docs/prints/dialogo.png) | ![A árvore de conquistas](docs/prints/conquistas.png) |
 
@@ -27,9 +27,10 @@ Uma história contada em conquistas (aba própria na tela de Progressos) e diál
 1. Pegue uma paçoca: começa a lenda.
 2. Nas **vilas de planície** pode surgir uma **Doceria** (casinha de telhado rosa). No baú está o
    *Caderno de Receitas da Vovó*, uma Maçã Dourada e uma Poção Arremessável de Fraqueza.
-3. Na cela de vidro está o **Seu Zé**, o último Doceiro, transformado em aldeão zumbi.
-   Arremesse a poção nele, abra a cela com a alavanca e dê a maçã dourada.
-4. Curado, ele volta a trabalhar na **Panela de Doces** e vende Paçoca Picante, bolo, maçã dourada
+3. Na cela de grades está a **Dona Benedita**, a última Doceira, transformada em aldeã zumbi.
+   Pelo vão no pilar da cela, arremesse a poção nela e dê a maçã dourada; depois abra a porta
+   com a alavanca da parede.
+4. Curada, ela volta a trabalhar na **Panela de Doces** e vende Paçoca Picante, bolo, maçã dourada
    e, no nível Mestre, a **Paçoca Dourada**.
 
 A Panela de Doces só funciona com Doceiros: aldeões desempregados a ignoram.
