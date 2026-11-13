@@ -60,6 +60,14 @@ public final class ModVillagers {
 		return map;
 	}
 
+	/**
+	 * Trocas que a Doceira SEMPRE oferece naquele nível (os doces da casa), além das sorteadas.
+	 * Ficam em data/pacoca/trade_set/doceiro/fixos e são adicionadas pelo VillagerMixin.
+	 */
+	public static ResourceKey<TradeSet> docesFixos(int level) {
+		return ResourceKey.create(Registries.TRADE_SET, PacocaMod.id("doceiro/fixos/level_" + level));
+	}
+
 	/** Só força o carregamento da classe, o que executa os registros acima. */
 	public static void initialize() {
 		PacocaMod.LOGGER.info("Doceiro registrado: {}", DOCEIRO_KEY.identifier());

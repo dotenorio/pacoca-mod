@@ -18,6 +18,7 @@
     }
   ],
   "action": {
-    "label": "Fechado!"
+    "label": "Fechado!",
+    "width": 250
   }
 }

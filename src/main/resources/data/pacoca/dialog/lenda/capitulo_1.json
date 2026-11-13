@@ -28,6 +28,7 @@
     }
   ],
   "action": {
-    "label": "Continuar"
+    "label": "Continuar",
+    "width": 250
   }
 }

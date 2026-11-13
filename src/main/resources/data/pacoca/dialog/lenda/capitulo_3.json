@@ -23,6 +23,7 @@
     }
   ],
   "action": {
-    "label": "Bem-vinda de volta, Dona Benedita"
+    "label": "Bem-vinda de volta, Dona Benedita",
+    "width": 250
   }
 }

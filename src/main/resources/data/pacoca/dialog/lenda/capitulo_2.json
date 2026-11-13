@@ -23,11 +23,12 @@
     },
     {
       "type": "minecraft:plain_message",
-      "contents": "Dica: arremesse a poção na Dona Benedita, abra a cela com a alavanca e dê a maçã dourada a ela. Cuidado: ela ainda morde!",
+      "contents": "Dica: pelo vão no pilar da cela, arremesse a poção na Dona Benedita e dê a maçã dourada a ela. Só abra a porta depois que ela acordar. Cuidado: ela ainda morde!",
       "width": 300
     }
   ],
   "action": {
-    "label": "Vou salvá-la"
+    "label": "Vou salvá-la",
+    "width": 250
   }
 }

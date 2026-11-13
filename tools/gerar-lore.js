@@ -11,7 +11,7 @@ const capitulos = [
     'As páginas estão manchadas de açúcar. Na última, uma letra tremida:',
     '"Minha filha Benedita foi mordida. Não tive coragem... tranquei ela atrás das grades da doceria. Se alguém achar este caderno: a fraqueza e a maçã dourada ainda podem salvá-la."',
     'No mesmo baú havia uma Poção Arremessável de Fraqueza e uma Maçã Dourada.',
-    'Dica: arremesse a poção na Dona Benedita, abra a cela com a alavanca e dê a maçã dourada a ela. Cuidado: ela ainda morde!',
+    'Dica: pelo vão no pilar da cela, arremesse a poção na Dona Benedita e dê a maçã dourada a ela. Só abra a porta depois que ela acordar. Cuidado: ela ainda morde!',
   ] },
   { titulo: 'A Doceira Acordou', botao: 'Bem-vinda de volta, Dona Benedita', texto: [
     'Dona Benedita pisca, cospe um pedaço de carne podre e abre um sorriso.',
@@ -34,7 +34,8 @@ capitulos.forEach((c, i) => {
     type: 'minecraft:notice',
     title: { text: c.titulo, color: 'gold', bold: true },
     body: c.texto.map(t => ({ type: 'minecraft:plain_message', contents: t, width: 300 })),
-    action: { label: c.botao },
+    // width: o botão padrão tem 150px e cortava rótulos longos ("Bem-vinda de volta, Dona Benedita")
+    action: { label: c.botao, width: 250 },
   };
   fs.writeFileSync(`dialog/lenda/capitulo_${n}.json`, JSON.stringify(dialog, null, 2) + '\n');
   fs.writeFileSync(`function/lenda/capitulo_${n}.mcfunction`,

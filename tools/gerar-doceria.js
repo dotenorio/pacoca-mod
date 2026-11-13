@@ -41,17 +41,24 @@ set(4, 1, 1, { id: 'pacoca:pacoca_block' }); set(5, 1, 1, { id: 'pacoca:pacoca_b
 set(7, 1, 1, B('barrel', { facing: 'up', open: 'false' }), { id: 'minecraft:barrel', Items: { t: 'List', et: 'Compound', v: [] } });
 set(2, 1, 7, B('potted_poppy'));
 set(4, 3, 4, B('lantern', { hanging: 'true', waterlogged: 'false' }));
-// 6) A cela da Dona Benedita (canto x=7,z=7): grades de ferro + porta de ferro com alavanca no chão.
+// 6) A cela da Dona Benedita (canto x=7,z=7): grades de ferro + porta de ferro com alavanca na parede.
 // As grades "grudam" nos vizinhos: a propriedade de cada lado diz se aquele braço da barra aparece.
+// (O /place não recalcula vizinhos, então cada braço tem que bater com o que está do lado.)
 const bars = (sides) => B('iron_bars', { north: 'false', south: 'false', east: 'false', west: 'false', waterlogged: 'false', ...sides });
-for (let y = 1; y <= 3; y++) {
-  set(6, y, 6, bars({ east: 'true', south: y === 3 ? 'true' : 'false' })); // canto da cela
-  set(7, y, 6, bars({ west: 'true', east: 'true' }));                            // liga na parede x=8
-}
-set(6, 3, 7, bars({ north: 'true', south: 'true' }));                         // em cima da porta
+const log = B('stripped_cherry_log', { axis: 'y' });
+// Canto da cela (6,y,6): pilar de cerejeira com um VÃO na altura dos olhos (y=2), por onde dá para
+// arremessar a poção e dar a maçã dourada antes de abrir a porta. Em cima (y=3), grade.
+set(6, 1, 6, log);
+set(6, 2, 6, B('air'));
+set(6, 3, 6, bars({ east: 'true', south: 'true' }));
+// Grade entre o pilar e a parede x=8: só liga para oeste onde tem bloco (y=1 e y=3), não no vão.
+for (let y = 1; y <= 3; y++) set(7, y, 6, bars({ east: 'true', west: y === 2 ? 'false' : 'true' }));
+set(6, 3, 7, log);                                                            // verga em cima da porta
 const iron = (half) => B('iron_door', { facing: 'east', half, hinge: 'right', open: 'false', powered: 'false' });
 set(6, 1, 7, iron('lower')); set(6, 2, 7, iron('upper'));
-set(5, 1, 7, B('lever', { face: 'floor', facing: 'east', powered: 'false' }));
+// Alavanca na parede do fundo (z=8), ao lado da metade de cima da porta: facing=north = aponta para
+// o norte, presa no bloco ao sul dela. Encostada na porta, ela a energiza direto.
+set(5, 2, 7, B('lever', { face: 'wall', facing: 'north', powered: 'false' }));
 
 // ---- Monta o NBT: paleta (estados únicos) + lista de blocos ----
 const palette = [], palIdx = new Map(), blocks = [];

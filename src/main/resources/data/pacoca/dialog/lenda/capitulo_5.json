@@ -23,6 +23,7 @@
     }
   ],
   "action": {
-    "label": "Fim... por enquanto"
+    "label": "Fim... por enquanto",
+    "width": 250
   }
 }
